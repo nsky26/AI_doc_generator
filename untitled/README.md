@@ -1,4 +1,4 @@
-# 🚀 AI Document Generator Suite
+🚀 AI Document Generator Suite
 
 A full-stack AI productivity workspace built with **React 19**, **TypeScript**, **Vite**, **Express 5**, and **Google Gemini 2.5-flash**. Features a space-themed UI with animated stars and asteroids, glassmorphism cards, and a ChatGPT-style chat interface.
 
