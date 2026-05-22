@@ -1,0 +1,8 @@
+{
+  "name": "AI Document Generator",
+  "description": "AI-powered document and content generation suite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
