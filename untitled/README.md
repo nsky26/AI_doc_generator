@@ -1,39 +1,20 @@
-🚀 AI Document Generator Suite
+# AI Document Generator
 
-A full-stack AI productivity workspace built with **React 19**, **TypeScript**, **Vite**, **Express 5**, and **Google Gemini 2.5-flash**. Features a space-themed UI with animated stars and asteroids, glassmorphism cards, and a ChatGPT-style chat interface.
+AI-powered document and content generation suite built with **React 19**, **TypeScript**, **Vite**, **Express 5**, and **Google Gemini 2.5-flash**.
 
----
-
-## ⚡ API Key & Quota
-
-**Current key:** `AIzaSyCQe7_tF5Opik9B3djcEy4cPY5RAmCjcBY`  
-**Model in use:** `gemini-2.5-flash`
-
-### Free Tier Limits (Gemini 2.5 Flash)
-
-| Limit | Value |
-|---|---|
-| Requests per minute (RPM) | **10 RPM** |
-| Requests per day (RPD) | **500 RPD** |
-| Input tokens per minute | 250,000 TPM |
-| Output tokens per minute | 10,000 TPM |
-
-> **In practice:** You get roughly **500 tool uses per day** across all 8 features combined. Each chat message, summary, document generation, etc. counts as 1 request. At normal demo/internship usage this is more than enough for a full day of testing.
-
-> **If you hit the limit:** Wait until midnight (Pacific Time) for the daily quota to reset, or generate a new API key at https://aistudio.google.com/apikey
+> This project is **open source** — contributions, issues, and feature requests are welcome! Star ⭐ this repository, fork it, or submit a pull request.
 
 ---
 
 ## ✨ Features
 
 ### 🏠 Dashboard — Document Generator
-The home page is a full glassmorphism document generator with:
+Full glassmorphism document generator with:
 - **Text prompt** input
 - **Image attachment** (PNG/JPG/WEBP up to 5 MB)
 - **File attachment** (TXT/MD/CSV up to 2 MB)
 - **Voice input** via Web Speech API (Chrome/Edge)
 - **8 document types**: Auto, Report, Email, Essay, Letter, Summary, Proposal, Meeting Notes, Blog Post
-- **3 one-click demo samples** that auto-generate on click
 
 ### 💬 AI Chatbot (`/chatbot`)
 Full-page ChatGPT-style interface:
@@ -58,7 +39,7 @@ Full-page ChatGPT-style interface:
 
 ## 🎨 UI Design
 
-- **Space background** — Canvas-rendered animated stars (220) + drifting asteroids (7) on every page
+- **Space background** — Canvas-rendered animated stars + drifting asteroids on every page
 - **Nebula blobs** — Animated violet/indigo/blue glow blobs behind all content
 - **Glassmorphism** — `backdrop-blur` + semi-transparent cards throughout
 - **Color palette** — Deep space `#03050f` base · Violet `#7c3aed` · Indigo `#4f46e5` accents
@@ -86,12 +67,11 @@ Full-page ChatGPT-style interface:
 
 ### Install
 ```bash
-cd untitled
 npm install
 ```
 
 ### Configure
-The API key is already set in `.env.local`. To use your own:
+Create a `.env.local` file in the project root and add your Gemini API key:
 ```env
 GEMINI_API_KEY=your_api_key_here
 ```
